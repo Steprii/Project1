@@ -9,6 +9,7 @@ body{
 .content{
     max-width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .container{
     max-width: 1330px;
@@ -20,11 +21,14 @@ body{
 
 .header {
     padding: 57px 20px 0 20px ;
+  display: flex;
+  justify-content: space-between;
     &__row {
         display: flex;
         justify-content: space-between;
     }
     &__nav {
+
         div{ 
             font-size: 18px;
             font-family: "Oswald";
@@ -43,7 +47,7 @@ body{
             width: 97px;
             height: 33px;
             font-size: 18px;
-            font-family: "Oswald";
+            font-family: "Oswald" ;
             color: rgb(24, 24, 24);
             text-transform: uppercase;
             line-height: 1.2;
@@ -57,7 +61,47 @@ body{
     }
     
 }
-
+.sign {
+  width: 97px;
+  height: 33px;
+  font-size: 18px;
+  font-family: "Oswald" ;
+  color: rgb(24, 24, 24);
+  text-transform: uppercase;
+  line-height: 1.2;
+  background-color: #fff;
+  margin: -5px 0 0 0 ;
+  padding-top: 5px ;
+  text-align: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+  font-size: 18px;
+  font-family: "Oswald";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 20px;
+}
+@media (max-width: 960px) {
+  .nav {
+    gap: 70px;
+  }
+}
+@media (max-width: 750px) {
+  .nav {
+    gap: 58px;
+  }
+}
+@media (max-width: 750px) {
+  .nav {
+    display: none;
+    display: none;
+  }
+}
 .sidebar {
   transform: translateX(-200px);
   transition: all .3s ease-in;
@@ -69,6 +113,7 @@ body{
   background-color: #fff;
   color: #181818;
   padding: 20px;
+  z-index: 5;
   ul {
     li {
       a {
@@ -158,10 +203,9 @@ body{
 .main {
     padding: 165px 30px 0 30px;
     position: relative;
-    &__row {
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+
     &__left {
         width: 435px;
         position: relative;
@@ -227,8 +271,7 @@ body{
         left: 0;
         height: 720px;
         width: 330px;
-        background: url(../img/main.png) no-repeat;
-        background-position: 0 0 ;
+        background: url("../img/main.png") 0 0 no-repeat;
         z-index: 5;
     }
     &__right {
@@ -276,7 +319,8 @@ body{
             color: rgb(255, 255, 255);
             font-weight: bold;
             line-height: 1.875;
-            text-align: justifyLeft;
+
+
 
     }
     &__right__btn {
@@ -321,7 +365,7 @@ body{
     margin-top: 144px;
     box-shadow: 0px 0px 30px 15px #000 ;
     position: relative;
-    z-index: 5;
+    z-index: 3;
     font-family: "Oswald";
     &__row {
         display: flex;
@@ -628,7 +672,7 @@ body{
         &__oval{
             height: 283px;
             width: 200px;
-            background: url(../img/Oval\ 1.png) -150px 0px no-repeat;
+            background: url(../img/Oval.png) -150px 0px no-repeat;
             position: absolute;
             top: -200px;
             left: 0;
@@ -664,7 +708,7 @@ body{
             color: rgb(255, 255, 255);
             font-weight: bold;
             line-height: 1.875;
-            text-align: justifyLeft;   
+
         }
         &__menu {
             margin-top: 35px;
@@ -745,7 +789,7 @@ body{
         &__oval {
             width: 670px;
             height: 470px;
-            background: url(../img/Oval2\ .png) 0 0 no-repeat; 
+            //background: url(../img/Oval2\ .png) 0 0 no-repeat;
             position: absolute;
             top: 0;
             left: -140px;
@@ -812,7 +856,7 @@ body{
             color: rgb(255, 255, 255);
             font-weight: bold;
             line-height: 1.875;
-            text-align: justifyLeft;
+
         }
         &__btn {
             margin-top: 40px;

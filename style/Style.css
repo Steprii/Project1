@@ -1,0 +1,75 @@
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: pink;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.train__btn {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.train__btn-title {
+  font-size: 23px;
+  text-align: center;
+  background-color: #9b59b6;
+  width: 140px;
+  margin: 0 auto;
+  border-radius: 20px;
+  line-height: 30px;
+  border: 2px solid #555555;
+}
+.part__title {
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+.part__exercise {
+  margin-top: 20px;
+}
+
+.img {
+  margin-top: 20px;
+  width: 400px;
+}
+
+.icon__img {
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 0;
+}
+
+.icon__vid {
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 0;
+}
+
+.icon {
+  padding-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=Style.css.map */

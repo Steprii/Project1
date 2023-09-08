@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-body {
-  background-color: pink;
-}
-
 .title {
   font-size: 30px;
   text-align: center;
@@ -33,6 +29,9 @@ body {
   border-radius: 20px;
   line-height: 30px;
   border: 2px solid #555555;
+}
+.train__block {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .part__title {
   margin-top: 20px;
@@ -70,6 +69,13 @@ body {
 .icons {
   display: flex;
   gap: 20px;
+}
+
+body {
+  background-image: url("../img/Photo/Yasuo .jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=Style.css.map */
